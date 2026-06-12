@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Posicionamento</title>
+
+    <style>
+        #Principal {
+            padding: 30px;
+            background-color: white;
+            margin: 0px;
+        }
+        #navbar{
+            padding: 30px;
+            background-color: #1E90FF;
+        }
+        body {
+            margin:30px 120px 30px;
+            background-color: lightblue;
+        }
+        a {
+            text-decoration: none;
+            font-size: 1.9em;
+            padding: 24px;
+            color: white;
+        }
+        img {
+            height: 60px;
+        }
+        #novo {
+            position: absolute; /* Faz com que ele não crie uma linha nova, mas sobreponha o que já existe*/
+            height: 200px;
+            right: 120px;
+            top: 29px;
+        }
+        #Conteudo h1 {
+            font-size: 60px;
+        }
+        #Conteudo p {
+            font-size: 30px;
+        }
+        #chat {
+            background-color: pink;
+            position: fixed;
+            bottom: 0px;
+            left: 0px;
+            height: 300px;
+            width: 300px;
+            padding: 10px;
+        }
+        #chat textarea {
+            height: 130px;
+            width: 230px;
+        }
+        #chat h3 {
+            font-size: 2em;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div id="Principal">
+        <img src="img/novo.png" alt="" id="novo">
+
+        <div id="navbar">
+            <img src="img/magalu.png" alt="">
+            <a href="">Home</a>
+            <a href="">Sobre</a>
+            <a href="">Produtos</a>
+            <a href="">Meus pedidos</a>
+            <a href="">Contato</a>
+        </div>
+
+        <div id="Conteudo">
+            <h1>Título do Site</h1>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae sint laudantium consequatur quos unde amet dolores, in voluptatem quidem minima nam, tempora vero perspiciatis voluptates eaque maxime est animi corporis!</p>
+            <h1>Título do Site</h1>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae sint laudantium consequatur quos unde amet dolores, in voluptatem quidem minima nam, tempora vero perspiciatis voluptates eaque maxime est animi corporis!</p>
+            <h1>Título do Site</h1>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae sint laudantium consequatur quos unde amet dolores, in voluptatem quidem minima nam, tempora vero perspiciatis voluptates eaque maxime est animi corporis!</p>   
+            <h1>Título do Site</h1>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae sint laudantium consequatur quos unde amet dolores, in voluptatem quidem minima nam, tempora vero perspiciatis voluptates eaque maxime est animi corporis!</p>  
+        </div>
+
+        <div id="chat">
+            <h3>Chat</h3>
+            <textarea placeholder="Digite algo" id=""></textarea>
+            <br>
+            <button type="submit">Enviar Chat</button>
+        </div>
+    </div>
+    
+</body>
+</html>
